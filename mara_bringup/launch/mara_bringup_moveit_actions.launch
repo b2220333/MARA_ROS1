@@ -19,7 +19,7 @@
     <param name="tf_prefix" type="string" value="" />
   </node>
 
-  <node pkg="mara_bringup" type="follow_joints_trajectory_actions.py" name="follow_joints_individual_trajectory" args="$(find mara_bringup)/config/motors.yaml $(arg env)"/>
+  <node pkg="mara_bringup" type="follow_joints_trajectory_actions.py" name="follow_joints_individual_trajectory" args="$(find mara_bringup)/config/mara.yaml $(arg env)"/>
 
   <include file="$(find mara_moveit_config)/launch/mara_moveit_planning_execution.launch">
   </include>
